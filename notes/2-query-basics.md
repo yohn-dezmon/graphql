@@ -51,3 +51,28 @@ Query {
     }
 }
 ```
+
+# Review Notes
+
+```
+query <name of query> {
+  <resource> {
+    <field>
+  }
+}
+```
+
+- when you create a GraphQl server, you need to connect data resources
+- this allows you to do nested queries to get data from different resources in a single query
+
+Getting a resource with a specific id:
+
+- this is a "query variable"
+
+```graphql
+query get_game_id {
+  game(id: "2") {
+    title
+  }
+}
+```
