@@ -15,6 +15,12 @@ const resolvers = {
         reviews() {
             return db.reviews 
         },
+        // parent = parent resolver in a chain
+        // args --> you can access any query variables from this obj
+        // context --> context values across all of our resolvers
+        review(parent, args) {
+
+        }
         authors() {
             return db.authors
         }

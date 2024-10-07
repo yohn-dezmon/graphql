@@ -15,5 +15,17 @@ const resolvers = {
 `nodemon` -- restarts the server everytime you make a change to the server
 
 ```bash
-nodemon 
+nodemon
+```
+
+# Apollo Server UI
+
+Schema > Queries > Data types
+
+Schema is a separate window from Explorer.
+
+It will return data in the format:
+
+```json
+{"data": "entity": [{"id": 1}]}
 ```
